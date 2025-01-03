@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adelya\\RiderProjects\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+      "projectUniqueName": "C:\\Users\\Adelya\\_repos\\AdvancedAlgoritms\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
       "projectName": "ConsoleApp4",
-      "projectPath": "C:\\Users\\Adelya\\RiderProjects\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+      "projectPath": "C:\\Users\\Adelya\\_repos\\AdvancedAlgoritms\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
       "packagesPath": "C:\\Users\\Adelya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adelya\\RiderProjects\\ConsoleApp4\\ConsoleApp4\\obj\\",
+      "outputPath": "C:\\Users\\Adelya\\_repos\\AdvancedAlgoritms\\ConsoleApp4\\ConsoleApp4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Adelya\\AppData\\Roaming\\NuGet\\NuGet.Config",

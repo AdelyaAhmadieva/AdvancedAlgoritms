@@ -7,7 +7,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Booking booking = new Booking();
-        booking.BookingSolution();
+        /*Booking booking = new Booking();
+        booking.BookingSolution();*/
+        
+
+        Matching matching = new Matching();
+        matching.InputData();
+        matching.DisplayResult(matching.Solve());
+
     }
 }
