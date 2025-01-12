@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleApp4")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Schedule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8c11da282773f4359878897578ac9334c7c7e56")]
-[assembly: System.Reflection.AssemblyProductAttribute("ConsoleApp4")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ConsoleApp4")]
+[assembly: System.Reflection.AssemblyProductAttribute("Schedule")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Schedule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
