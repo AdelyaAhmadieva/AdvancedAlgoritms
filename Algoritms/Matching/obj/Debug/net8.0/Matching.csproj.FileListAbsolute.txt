@@ -1,0 +1,15 @@
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\bin\Debug\net8.0\Matching.exe
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\bin\Debug\net8.0\Matching.deps.json
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\bin\Debug\net8.0\Matching.runtimeconfig.json
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\bin\Debug\net8.0\Matching.dll
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\bin\Debug\net8.0\Matching.pdb
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.AssemblyInfoInputs.cache
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.AssemblyInfo.cs
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.csproj.CoreCompileInputs.cache
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.sourcelink.json
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.dll
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\refint\Matching.dll
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.pdb
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\Matching.genruntimeconfig.cache
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\Matching\obj\Debug\net8.0\ref\Matching.dll
