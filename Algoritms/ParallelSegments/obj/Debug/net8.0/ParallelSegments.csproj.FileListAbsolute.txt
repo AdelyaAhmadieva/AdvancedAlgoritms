@@ -1,0 +1,15 @@
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\bin\Debug\net8.0\ParallelSegments.exe
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\bin\Debug\net8.0\ParallelSegments.deps.json
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\bin\Debug\net8.0\ParallelSegments.runtimeconfig.json
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\bin\Debug\net8.0\ParallelSegments.dll
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\bin\Debug\net8.0\ParallelSegments.pdb
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.AssemblyInfoInputs.cache
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.AssemblyInfo.cs
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.csproj.CoreCompileInputs.cache
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.sourcelink.json
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.dll
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\refint\ParallelSegments.dll
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.pdb
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ParallelSegments.genruntimeconfig.cache
+C:\Users\Adelya\_repos\AdvancedAlgoritms\Algoritms\ParallelSegments\obj\Debug\net8.0\ref\ParallelSegments.dll

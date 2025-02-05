@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedule", "Schedule\Schedu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matching", "Matching\Matching.csproj", "{160D4298-F928-4056-8CF2-656787968BBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelSegments", "ParallelSegments\ParallelSegments.csproj", "{A7172606-831A-4BE7-AE89-7BD60CAABCF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{160D4298-F928-4056-8CF2-656787968BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{160D4298-F928-4056-8CF2-656787968BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{160D4298-F928-4056-8CF2-656787968BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7172606-831A-4BE7-AE89-7BD60CAABCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7172606-831A-4BE7-AE89-7BD60CAABCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7172606-831A-4BE7-AE89-7BD60CAABCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7172606-831A-4BE7-AE89-7BD60CAABCF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
