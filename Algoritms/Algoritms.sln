@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedule", "Schedule\Schedule.csproj", "{10EE8FEB-1CA2-4F02-851D-6F7F96B0EF9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matching", "Matching\Matching.csproj", "{160D4298-F928-4056-8CF2-656787968BBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{10EE8FEB-1CA2-4F02-851D-6F7F96B0EF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10EE8FEB-1CA2-4F02-851D-6F7F96B0EF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10EE8FEB-1CA2-4F02-851D-6F7F96B0EF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160D4298-F928-4056-8CF2-656787968BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160D4298-F928-4056-8CF2-656787968BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160D4298-F928-4056-8CF2-656787968BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160D4298-F928-4056-8CF2-656787968BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
