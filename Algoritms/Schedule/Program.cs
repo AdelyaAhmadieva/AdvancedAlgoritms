@@ -1,128 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-class Program
+class ExamScheduler
 {
-    public class Subject
+    public static int MinimizePenalty(int n, int m, int[] deadlines, int[] penalties, int[] durations)
     {
-        public int Day { get; set; }   // День сдачи предмета
-        public int Fine { get; set; } // Штраф за несдачу
-        public int Index { get; set; } // Индекс предмета
-    }
-
-    static void Main()
-    {
-        Random random = new Random();
-        int n = random.Next(5, 15); // Количество предметов
-        int m = random.Next(3, n); // Доступные дни
-
-        int[] days = new int[n];
-        int[] fines = new int[n];
-
+        List<(int deadline, int penalty, int duration)> subjects = new();
         for (int i = 0; i < n; i++)
-        {
-            days[i] = random.Next(1, m + 1);  // День сдачи
-            fines[i] = random.Next(1, 20);    // Штраф
-        }
+            subjects.Add((deadlines[i], penalties[i], durations[i]));
 
-        Console.WriteLine($"Количество предметов: {n}");
-        Console.WriteLine($"Доступные дни: {m}");
-        Console.WriteLine("Предметы (день сдачи, штраф):");
-        for (int i = 0; i < n; i++)
-        {
-            Console.WriteLine($"Предмет {i + 1}: День сдачи = {days[i]}, Штраф = {fines[i]}");
-        }
+        // Сортируем по дедлайну
+        subjects.Sort((a, b) => a.deadline.CompareTo(b.deadline));
 
-        // Выполняем оба алгоритма
-        int fineQuadratic = MinimizeFineQuadratic(n, days, fines);
-        Console.WriteLine($"\nМинимальная сумма штрафов (O(n^2)): {fineQuadratic}");
-
-        int fineEfficient = MinimizeFineEfficient(n, m, days, fines);
-        Console.WriteLine($"Минимальная сумма штрафов (O(n log n)): {fineEfficient}");
-    }
-
-    // O(n^2) Алгоритм
-    static int MinimizeFineQuadratic(int n, int[] days, int[] fines)
-    {
-        List<Subject> subjects = new List<Subject>();
-        for (int i = 0; i < n; i++)
-        {
-            subjects.Add(new Subject { Day = days[i], Fine = fines[i], Index = i });
-        }
-
-        // Сортируем предметы
-        subjects = subjects
-            .OrderBy(s => s.Day)
-            .ThenByDescending(s => s.Fine)
-            .ToList();
-
-        bool[] usedDays = new bool[subjects.Max(s => s.Day) + 1];
-        int totalFine = 0;
+        // Куча для хранения предметов по штрафу
+        SortedSet<(int penalty, int index)> heap = new SortedSet<(int, int)>();
+        int totalPenalty = 0;
+        int usedDays = 0;
 
         foreach (var subject in subjects)
         {
-            bool scheduled = false;
+            heap.Add((subject.penalty, usedDays));
+            usedDays += subject.duration;
 
-            // Перебираем дни от дня сдачи до 1
-            for (int day = subject.Day; day > 0; day--)
+            // Если выходим за лимит дней, удаляем самый "дешевый" предмет
+            while (usedDays > m && heap.Count > 0)
             {
-                if (!usedDays[day])
-                {
-                    usedDays[day] = true; // Занимаем день
-                    scheduled = true;
-                    break;
-                }
-            }
-
-            // Если день не найден, добавляем штраф
-            if (!scheduled)
-            {
-                totalFine += subject.Fine;
+                var minPenalty = heap.Min;
+                heap.Remove(minPenalty);
+                totalPenalty += minPenalty.penalty;
+                usedDays -= subjects[minPenalty.index].duration;
             }
         }
 
-        return totalFine;
+        return totalPenalty;
     }
 
-    // O(n log n) Алгоритм
-    static int MinimizeFineEfficient(int n, int m, int[] days, int[] fines)
+    public static void Main()
     {
-        List<Subject> subjects = new List<Subject>();
-        for (int i = 0; i < n; i++)
-        {
-            subjects.Add(new Subject { Day = days[i], Fine = fines[i], Index = i });
-        }
+        int n = 3, m = 3;
+        int[] deadlines = { 1, 2, 3 };
+        int[] penalties = { 50, 60, 200 };
+        int[] durations = { 1, 1, 3 };
 
-        // Сортируем предметы
-        subjects = subjects
-            .OrderBy(s => s.Day)
-            .ThenByDescending(s => s.Fine)
-            .ToList();
-
-        // Используем SortedSet для отслеживания доступных дней
-        SortedSet<int> availableDays = new SortedSet<int>();
-        for (int i = 1; i <= m; i++)
-        {
-            availableDays.Add(i);
-        }
-
-        int totalFine = 0;
-
-        foreach (var subject in subjects)
-        {
-            // Найти ближайший доступный день, начиная с subject.Day
-            var day = availableDays.GetViewBetween(1, subject.Day).Max;
-
-            if (day > 0)
-            {
-                availableDays.Remove(day); // Занимаем день
-            }
-            else
-            {
-                totalFine += subject.Fine; // Если день не найден, добавляем штраф
-            }
-        }
-        return totalFine;
+        int result = MinimizePenalty(n, m, deadlines, penalties, durations);
+        Console.WriteLine($"Минимальный штраф: {result}");
     }
 }
