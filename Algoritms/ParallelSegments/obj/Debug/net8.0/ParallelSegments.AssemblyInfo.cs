@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParallelSegments")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e99db261229cb59db1208b66ca4309816234f79b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+976549d044373f3958832e6570922e7c5a68f05d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParallelSegments")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParallelSegments")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
