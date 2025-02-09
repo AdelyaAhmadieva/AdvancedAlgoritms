@@ -40,7 +40,7 @@ public class Matching
         while (true)
         {
             var input = Console.ReadLine();
-            var preferences = input.Split().Select(s => int.TryParse(s, out var num) ? num - 1 : -1).ToList(); // Convert to zero-based indexing
+            var preferences = input.Split().Select(s => int.TryParse(s, out var num) ? num - 1 : -1).ToList(); 
 
             if (preferences.Count == n && preferences.All(p => p >= 0 && p < n) && preferences.Distinct().Count() == n)
             {
